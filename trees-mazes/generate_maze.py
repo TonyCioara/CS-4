@@ -9,7 +9,7 @@ def create_dfs(m):
     cell = random.randint(0, m.total_cells)
     visited_cells = 1
 
-    while visited_cells <= m.total_cells:
+    while visited_cells < m.total_cells:
         neighbors = m.cell_neighbors(cell)
         if len(neighbors) > 0:
 
